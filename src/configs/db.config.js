@@ -2,12 +2,12 @@ import mongoose from "mongoose";
 
 const connectToMongodb = () => {
   mongoose
-    .connect(process.env.MONGODB_URI)
+    .connect("mongodb+srv://chisomsylvia95:September95@cluster0.eaosxk0.mongodb.net")
     .then(() => {
       console.log("Mongodb is connected!");
     })
-    .catch(() => {
-      console.log("Error detected");
+    .catch((error) => {
+      console.error('Error connecting to MongoDB:', error) 
     });
 }
 
