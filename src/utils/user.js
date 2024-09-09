@@ -11,6 +11,21 @@ const GENDER = {
   OTHER: "Other",
 };
 
+const APPOINTMENT_TYPES = {
+  CONSULTATION: "Consultation",
+  TREATMENT: "Treatment",
+  SURGERY: "Surgery",
+  CHECKUP: "CheckUp",
+  LABTEST: "Lab Test",
+};
+
+const STATUS = {
+  PENDING: "Pending",
+  APPROVED: "Approved",
+  DECLINED: "Declined",
+  COMPLETED: "Completed",
+};
+
 const SPECIALTY = {
   ORTHOPEDICS: "Orthopedics",
   PEDIATRICS: "Pediatrics",
@@ -64,6 +79,8 @@ const TIME_SLOTS = [
 export {
   USER_TYPES,
   GENDER,
+  APPOINTMENT_TYPES,
+  STATUS,
   SPECIALTY,
   DAYS,
   TIME_SLOTS,
